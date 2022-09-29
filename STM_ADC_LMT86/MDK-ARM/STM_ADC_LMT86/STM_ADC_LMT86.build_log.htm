@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: IoT Team, CDAC, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+D:\1_Akash\sens_Prog\FINAL\STM_ADC_LMT86\MDK-ARM\STM_ADC_LMT86.uvprojx
+Project File Date:  07/07/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'STM_ADC_LMT86'
+compiling main.c...
+../Src/main.c(76): warning:  #223-D: function "strlen" declared implicitly
+  		HAL_UART_Transmit(&hlpuart1,(uint8_t*)string,strlen(string),0xFFFFFF);
+../Src/main.c(132): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(LD2_GPIO_Port,LD2_Pin,1);
+../Src/main.c(134): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(LD2_GPIO_Port,LD2_Pin,0);
+../Src/main.c(150): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		Temperature  = (((10.888)-sqrt((pow(-10.888,2))+(4*0.00347*(1777.3-ADC_Value))))/(2*(-0.00347)))+30;
+../Src/main.c(100): warning:  #177-D: variable "tmp"  was declared but never referenced
+  	uint8_t *tmp;
+../Src/main.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=17500 RO-data=700 RW-data=28 ZI-data=1452  
+FromELF: creating hex file...
+"STM_ADC_LMT86\STM_ADC_LMT86.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.ARM_Compiler.1.6.0.pack
+                Keil.ARM_Compiler.1.6.0
+                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
+   * Component: STDERR Variant: ITM Version: 1.2.0
+   * Component: STDIN Variant: ITM Version: 1.2.0
+   * Component: STDOUT Variant: ITM Version: 1.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.3.0.pack
+                Keil.STM32G4xx_DFP.1.3.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM_ADC_LMT86
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.3.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDERR:ITM:1.2.0
+      Source file:   Source\retarget_io.c
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDIN:ITM:1.2.0
+      Source file:   Source\retarget_io.c
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDOUT:ITM:1.2.0
+      Source file:   Source\retarget_io.c
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

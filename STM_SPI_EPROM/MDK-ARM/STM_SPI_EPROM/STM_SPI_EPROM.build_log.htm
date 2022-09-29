@@ -1,0 +1,153 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sahithee Kolla Sahithee CDAC Flex license: MDK-ARM Essential: 1 user(s) (mdk_essential) Support: Jun 2022
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Essential: 1 user(s)  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+E:\Projects\FutureSkills\FINAL\STM_SPI_EPROM\MDK-ARM\STM_SPI_EPROM.uvprojx
+Project File Date:  11/27/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'STM_SPI_EPROM'
+assembling startup_stm32g431xx.s...
+compiling stm32g4xx_hal.c...
+compiling main.c...
+../Core/Inc/EEPROM.h(42): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Inc/EEPROM.h(31): warning:  #1295-D: Deprecated declaration WriteByte - give arg types
+  ORET_STATUS WriteByte();
+../Core/Inc/EEPROM.h(33): warning:  #1295-D: Deprecated declaration WriteBlock - give arg types
+  ORET_STATUS WriteBlock();
+../Core/Inc/EEPROM.h(34): warning:  #1295-D: Deprecated declaration ReadByte - give arg types
+  uint8_t ReadByte();
+../Core/Inc/EEPROM.h(36): warning:  #1295-D: Deprecated declaration ReadBlock - give arg types
+  uint8_t ReadBlock();
+../Core/Inc/EEPROM.h(37): warning:  #1295-D: Deprecated declaration WriteEnable - give arg types
+  void WriteEnable();
+../Core/Inc/EEPROM.h(38): warning:  #1295-D: Deprecated declaration WriteDisable - give arg types
+  void WriteDisable();
+../Core/Inc/EEPROM.h(39): warning:  #1295-D: Deprecated declaration ReadStatus - give arg types
+  uint8_t ReadStatus();
+../Core/Inc/EEPROM.h(42): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(64): warning:  #223-D: function "vsprintf" declared implicitly
+  	if(0<vsprintf(string,fmt,argp)){
+../Core/Src/main.c(125): warning:  #177-D: variable "buf"  was declared but never referenced
+  		uint8_t buf[4];
+../Core/Src/main.c: 11 warnings, 0 errors
+compiling gpio.c...
+compiling stm32g4xx_hal_gpio.c...
+compiling stm32g4xx_hal_uart.c...
+compiling spi.c...
+compiling stm32g4xx_it.c...
+compiling EEPROM.c...
+../Core/Inc/EEPROM.h(42): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Inc/EEPROM.h(31): warning:  #1295-D: Deprecated declaration WriteByte - give arg types
+  ORET_STATUS WriteByte();
+../Core/Inc/EEPROM.h(33): warning:  #1295-D: Deprecated declaration WriteBlock - give arg types
+  ORET_STATUS WriteBlock();
+../Core/Inc/EEPROM.h(34): warning:  #1295-D: Deprecated declaration ReadByte - give arg types
+  uint8_t ReadByte();
+../Core/Inc/EEPROM.h(36): warning:  #1295-D: Deprecated declaration ReadBlock - give arg types
+  uint8_t ReadBlock();
+../Core/Inc/EEPROM.h(37): warning:  #1295-D: Deprecated declaration WriteEnable - give arg types
+  void WriteEnable();
+../Core/Inc/EEPROM.h(38): warning:  #1295-D: Deprecated declaration WriteDisable - give arg types
+  void WriteDisable();
+../Core/Inc/EEPROM.h(39): warning:  #1295-D: Deprecated declaration ReadStatus - give arg types
+  uint8_t ReadStatus();
+../Core/Inc/EEPROM.h(42): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Core\Src\EEPROM.c(7): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(WP_GPIO_Port,WP_Pin,1);
+..\Core\Src\EEPROM.c(8): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(HOLD_GPIO_Port,HOLD_Pin,1);
+..\Core\Src\EEPROM.c(9): warning:  #940-D: missing return statement at end of non-void function "Init_EEPROM" 
+  }
+..\Core\Src\EEPROM.c(13): warning:  #940-D: missing return statement at end of non-void function "WriteByte" 
+  }
+..\Core\Src\EEPROM.c(45): warning:  #223-D: function "debug_printf" declared implicitly
+  			DEBUG_LOG("Error");
+..\Core\Src\EEPROM.c(56): warning:  #940-D: missing return statement at end of non-void function "WriteBlock" 
+  }
+..\Core\Src\EEPROM.c(60): warning:  #940-D: missing return statement at end of non-void function "ReadByte" 
+  }
+..\Core\Src\EEPROM.c(65): warning:  #223-D: function "debug_printf" declared implicitly
+  		DEBUG_LOG("SPI is busy"); 
+..\Core\Src\EEPROM.c(67): warning:  #177-D: variable "EEPROM_STATUS"  was declared but never referenced
+  	HAL_StatusTypeDef EEPROM_STATUS;
+..\Core\Src\EEPROM.c(92): warning:  #940-D: missing return statement at end of non-void function "ReadBlock" 
+  }
+..\Core\Src\EEPROM.c(111): warning:  #940-D: missing return statement at end of non-void function "ReadStatus" 
+  }
+..\Core\Src\EEPROM.c(139): warning:  #1-D: last line of file ends without a newline
+  }
+..\Core\Src\EEPROM.c: 21 warnings, 0 errors
+compiling usart.c...
+compiling stm32g4xx_hal_msp.c...
+compiling stm32g4xx_hal_uart_ex.c...
+compiling stm32g4xx_hal_exti.c...
+compiling stm32g4xx_hal_dma.c...
+compiling stm32g4xx_hal_rcc.c...
+compiling stm32g4xx_hal_flash.c...
+compiling stm32g4xx_hal_flash_ramfunc.c...
+compiling stm32g4xx_hal_pwr.c...
+compiling stm32g4xx_hal_dma_ex.c...
+compiling stm32g4xx_hal_rcc_ex.c...
+compiling stm32g4xx_hal_pwr_ex.c...
+compiling stm32g4xx_hal_flash_ex.c...
+compiling stm32g4xx_hal_cortex.c...
+compiling stm32g4xx_hal_tim.c...
+compiling system_stm32g4xx.c...
+compiling stm32g4xx_hal_tim_ex.c...
+compiling stm32g4xx_hal_spi_ex.c...
+compiling stm32g4xx_hal_spi.c...
+linking...
+Program Size: Code=12656 RO-data=552 RW-data=20 ZI-data=1268  
+FromELF: creating hex file...
+"STM_SPI_EPROM\STM_SPI_EPROM.axf" - 0 Error(s), 32 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.1.0.pack
+                Keil.STM32G4xx_DFP.1.1.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM_SPI_EPROM
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.1.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+Build Time Elapsed:  00:00:23
+</pre>
+</body>
+</html>
